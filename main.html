@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css"/>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Carlos Dario Soto Mendez</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Über mich</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Soto Mendez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Über mich</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projekte</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="img_dario" src="./assets/Suit.jpeg" alt="dario pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__pl">Hi, ich bin</p>
+        <h1 class="title">Dario</h1>
+        <p class="section__text__p2">Informatik Student</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Lebenslauf-Soto_Mendez.pdf')">Lebenslauf herunterladen</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Kontakt Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png"
+          alt="Mein Linkedin"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/dario-soto-mendez-598543155/'"/>
+        </div>
+      </div>    
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Ein bisschen mehr</p>
+      <h1 class="title">Über Mich</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/Dario_Foto.jpeg" alt="profile pciture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon"/>
+              <h3>Sachfach Informatik</h3>
+              <p>bei der Hochschule Mannheim</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" />
+              <h3>Zertifikate</h3>
+              <p >Bitdegree<br />Google</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Während meines Studiums der Sprach-, Kultur- und Translationswissenschaft entwickelte ich eine starke Begeisterung für Informatik. 
+              Diese Leidenschaft führte mich dazu, Online-Programmierkurse bei Bitdegree und Google zu absolvieren, die ich erfolgreich mit
+               Zertifikaten abgeschlossen habe, die auf LinkedIn zu sehen sind. Um mein Interesse weiter zu vertiefen, belegte ich ein Sachfach, das in Kooperation mit der 
+               Hochschule Mannheim angeboten wurde, wo ich mich intensiv mit Datenbanken und Webanwendungen auseinandersetzte.
+            <br/>
+            <br/>
+              Um bestens auf mein Informatikstudium vorbereitet zu sein, absolvierte ich den T-Kurs des Studienkollegs als externer 
+              Teilnehmer. Trotz der Herausforderung, die Fächer Physik, Mathematik, Informatik und Chemie ohne Unterricht eigenständig zu 
+              erlernen, bestand ich die Prüfung erfolgreich. Dieser Erfolg unterstreicht mein Engagement und meine Entschlossenheit, mich 
+              kontinuierlich weiterzuentwickeln.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Schau dir mal</p>
+      <h1 class="title">meine letzen Projekte an</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Webscraper</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Delatierra/Webscraper'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Email Sender</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Delatierra/Email_sender'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python Exercises</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Delatierra/python_exercises'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Hier ist</p>
+      <h1 class="title">mein Kontakt</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:carlosdario1999ecua@gmail.com">carlosdario1999ecua@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/dario-soto-mendez-598543155/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
